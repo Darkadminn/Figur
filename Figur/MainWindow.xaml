@@ -10,11 +10,10 @@
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="294" Visibility="Visible">
             <MenuItem Header="Input" Name="miInput" Click="Click_Input"/>
             <MenuItem Header="Calc" Name="miCalc" Click="Click_Calc" />
+            <MenuItem Header="Draw" Click="Click_Draw" />
             <MenuItem Header="Exit" Click="Click_Exit" />
         </Menu>        <StackPanel Name="stackpanel" Visibility="Hidden">
-            <TextBox Name="value1" Text="Длина 1 стороны"/>
-            <TextBox Name="value2" Text="Длина 2 стороны"/>
-            <TextBox Name="value3" Text="Длина 3 стороны"/>
+            <TextBox Name="radius" Text="Радиус"/>
             <CheckBox  Content="Периметр" Name="P"/>
             <CheckBox  Content="Площадь" Name="S"/>
             <Button Content="Посчитать" Click="Click_Result"/>

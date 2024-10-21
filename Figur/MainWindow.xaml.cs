@@ -31,18 +31,16 @@ namespace Figur
         {
             if (P.IsChecked == true && S.IsChecked == true)
             {
-                resultP = Convert.ToInt32(value1.Text.ToString()) + Convert.ToInt32(value2.Text.ToString()) + Convert.ToInt32(value3.Text.ToString());
-                double p = (Convert.ToInt32(value1.Text.ToString()) + Convert.ToInt32(value2.Text.ToString()) + Convert.ToInt32(value3.Text.ToString())) / 2;
-                resultS = Math.Sqrt(p * (p - Convert.ToInt32(value1.Text.ToString())) * (p - Convert.ToInt32(value2.Text.ToString())) * (p - Convert.ToInt32(value3.Text.ToString())));
+               resultP = 2*Math.PI*Convert.ToInt32(radius.Text.ToString());
+               resultS = Math.PI * Math.Pow(Convert.ToInt32(radius.Text.ToString()), 2);
             }
             else if (P.IsChecked == true && S.IsChecked != true)
             {
-                resultP = Convert.ToInt32(value1.Text.ToString()) + Convert.ToInt32(value2.Text.ToString()) + Convert.ToInt32(value3.Text.ToString());
+                resultP = 2 * Math.PI * Convert.ToInt32(radius.Text.ToString());
             }
             else if(P.IsChecked != true && S.IsChecked == true)
             {
-                double p = (Convert.ToInt32(value1.Text.ToString()) + Convert.ToInt32(value2.Text.ToString()) + Convert.ToInt32(value3.Text.ToString())) / 2;
-                resultS = Math.Sqrt(p * (p - Convert.ToInt32(value1.Text.ToString())) * (p - Convert.ToInt32(value2.Text.ToString())) * (p - Convert.ToInt32(value3.Text.ToString())));
+                resultS = Math.PI * Math.Pow(Convert.ToInt32(radius.Text.ToString()), 2);
             }
             stackpanel.Visibility = Visibility.Hidden;
             menu.Visibility = Visibility.Visible;
@@ -63,6 +61,10 @@ namespace Figur
         {
             stackpanel.Visibility=Visibility.Visible;
             menu.Visibility=Visibility.Hidden;
+        }
+        private void Click_Draw(object sender, EventArgs e)
+        {
+
         }
     }
 }
