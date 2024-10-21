@@ -6,17 +6,17 @@
         xmlns:local="clr-namespace:Figur"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Name="grid">
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="294" Visibility="Visible">
             <MenuItem Header="Input" Name="miInput" Click="Click_Input"/>
             <MenuItem Header="Calc" Name="miCalc" Click="Click_Calc" />
             <MenuItem Header="Draw" Click="Click_Draw" />
             <MenuItem Header="Exit" Click="Click_Exit" />
-        </Menu>        <StackPanel Name="stackpanel" Visibility="Hidden">
+        </Menu>        <StackPanel Name="stackpanel" Visibility="Hidden" Height="450" Width="800">
             <TextBox Name="radius" Text="Радиус"/>
             <CheckBox  Content="Периметр" Name="P"/>
             <CheckBox  Content="Площадь" Name="S"/>
             <Button Content="Посчитать" Click="Click_Result"/>
-        </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>

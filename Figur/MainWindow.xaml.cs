@@ -22,6 +22,7 @@ namespace Figur
     {
         double resultP = 0;
         double resultS = 0;
+        int elip = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -64,7 +65,28 @@ namespace Figur
         }
         private void Click_Draw(object sender, EventArgs e)
         {
-
+            if((Convert.ToInt32(radius.Text.ToString()) * 2) > 432)
+            {
+                MessageBox.Show("рисование невозможно");
+            }      
+            else 
+            {
+                if (elip > 0)
+                {
+                    grid.Children.RemoveAt(2);
+                    elip = 0;
+                }
+                else elip = 1;
+                Ellipse el = new Ellipse();
+                el.Name = "ell";
+                el.Width = (Convert.ToInt32(radius.Text.ToString()) * 2);
+                el.Height = (Convert.ToInt32(radius.Text.ToString()) * 2);
+                el.VerticalAlignment = VerticalAlignment.Center;
+                el.HorizontalAlignment = HorizontalAlignment.Center;
+                el.Fill = Brushes.BlueViolet;
+                grid.Children.Add(el);
+            }
+            
         }
     }
 }
