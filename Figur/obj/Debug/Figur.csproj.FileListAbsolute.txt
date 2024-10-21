@@ -1,0 +1,15 @@
+C:\Users\burul\source\repos\Figur\Figur\bin\Debug\Figur.exe.config
+C:\Users\burul\source\repos\Figur\Figur\bin\Debug\Figur.exe
+C:\Users\burul\source\repos\Figur\Figur\bin\Debug\Figur.pdb
+C:\Users\burul\source\repos\Figur\Figur\obj\Debug\Figur.csproj.AssemblyReference.cache
+C:\Users\burul\source\repos\Figur\Figur\obj\Debug\MainWindow.g.cs
+C:\Users\burul\source\repos\Figur\Figur\obj\Debug\App.g.cs
+C:\Users\burul\source\repos\Figur\Figur\obj\Debug\Figur_MarkupCompile.cache
+C:\Users\burul\source\repos\Figur\Figur\obj\Debug\Figur_MarkupCompile.lref
+C:\Users\burul\source\repos\Figur\Figur\obj\Debug\MainWindow.baml
+C:\Users\burul\source\repos\Figur\Figur\obj\Debug\Figur.g.resources
+C:\Users\burul\source\repos\Figur\Figur\obj\Debug\Figur.Properties.Resources.resources
+C:\Users\burul\source\repos\Figur\Figur\obj\Debug\Figur.csproj.GenerateResource.cache
+C:\Users\burul\source\repos\Figur\Figur\obj\Debug\Figur.csproj.CoreCompileInputs.cache
+C:\Users\burul\source\repos\Figur\Figur\obj\Debug\Figur.exe
+C:\Users\burul\source\repos\Figur\Figur\obj\Debug\Figur.pdb
