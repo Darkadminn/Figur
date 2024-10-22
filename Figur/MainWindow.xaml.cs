@@ -29,6 +29,8 @@ namespace Figur
 
         private void Click_Result(object sender, RoutedEventArgs e)
         {
+            resultP = 0;
+            resultS = 0;
             if (P.IsChecked == true && S.IsChecked == true)
             {
                 resultP = Convert.ToInt32(value1.Text.ToString()) + Convert.ToInt32(value2.Text.ToString()) + Convert.ToInt32(value3.Text.ToString());
