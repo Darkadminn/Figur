@@ -30,6 +30,8 @@ namespace Figur
 
         private void Click_Result(object sender, RoutedEventArgs e)
         {
+            resultP = 0;
+            resultS = 0;
             if (P.IsChecked == true && S.IsChecked == true)
             {
                resultP = 2*Math.PI*Convert.ToInt32(radius.Text.ToString());
@@ -90,6 +92,10 @@ namespace Figur
                 grid.Children.Add(el);
             }
             
+        }
+        private void Double_Click(object sender, EventArgs e)
+        {
+            radius.Text = "";
         }
     }
 }

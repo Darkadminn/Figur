@@ -17,7 +17,7 @@
             <MenuItem Header="Draw" Click="Click_Draw" />
             <MenuItem Header="Exit" Click="Click_Exit" />
         </Menu>        <StackPanel Name="stackpanel" Visibility="Hidden" Width="800" Margin="0,116,0,101" Grid.ColumnSpan="2">
-            <TextBox Name="radius" Text="Радиус" Height="29" FontSize="18"/>
+            <TextBox Name="radius" Text="Радиус" Height="29" FontSize="18" MouseDoubleClick="Double_Click"/>
             <CheckBox  Content="Периметр" Name="P" Height="21"/>
             <CheckBox  Content="Площадь" Name="S" Height="21"/>
             <Button Content="Посчитать" Click="Click_Result" Height="55" FontSize="30"/>
