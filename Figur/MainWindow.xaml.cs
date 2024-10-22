@@ -22,7 +22,7 @@ namespace Figur
     {
         double resultP = 0;
         double resultS = 0;
-        int elip = 0;
+        bool elip = false;
         public MainWindow()
         {
             InitializeComponent();
@@ -60,6 +60,10 @@ namespace Figur
 
         private void Click_Input(object sender, EventArgs e)
         {
+            if (elip)
+            {
+                grid.Children[2].Visibility = Visibility.Hidden;
+            }
             stackpanel.Visibility=Visibility.Visible;
             menu.Visibility=Visibility.Hidden;
         }
@@ -71,12 +75,11 @@ namespace Figur
             }      
             else 
             {
-                if (elip > 0)
+                if (elip)
                 {
                     grid.Children.RemoveAt(2);
-                    elip = 0;
                 }
-                else elip = 1;
+                else elip = true;
                 Ellipse el = new Ellipse();
                 el.Name = "ell";
                 el.Width = (Convert.ToInt32(radius.Text.ToString()) * 2);
