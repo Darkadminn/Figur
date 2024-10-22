@@ -66,5 +66,19 @@ namespace Figur
             stackpanel.Visibility=Visibility.Visible;
             menu.Visibility=Visibility.Hidden;
         }
+        private void Double_Click1(object sender, EventArgs e)
+        {
+            value1.Text = "";
+            value2.Text = "";
+            value3.Text = "";
+        }
+        private void Double_Click2(object sender, EventArgs e)
+        {
+            value2.Text = "";
+        }
+        private void Double_Click3(object sender, EventArgs e)
+        {
+            value3.Text = "";
+        }
     }
 }

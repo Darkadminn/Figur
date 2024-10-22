@@ -12,9 +12,9 @@
             <MenuItem Header="Calc" Name="miCalc" Click="Click_Calc" />
             <MenuItem Header="Exit" Click="Click_Exit" />
         </Menu>        <StackPanel Name="stackpanel" Visibility="Hidden" Margin="0,146,0,126">
-            <TextBox Name="value1" Text="Длина 1 стороны" FontSize="18"/>
-            <TextBox Name="value2" Text="Длина 2 стороны" FontSize="18"/>
-            <TextBox Name="value3" Text="Длина 3 стороны" FontSize="18"/>
+            <TextBox Name="value1" Text="Длина 1 стороны" FontSize="18" MouseDoubleClick="Double_Click1"/>
+            <TextBox Name="value2" Text="Длина 2 стороны" FontSize="18" MouseDoubleClick="Double_Click1"/>
+            <TextBox Name="value3" Text="Длина 3 стороны" FontSize="18" MouseDoubleClick="Double_Click1"/>
             <CheckBox  Content="Периметр" Name="P"/>
             <CheckBox  Content="Площадь" Name="S"/>
             <Button Content="Посчитать" Click="Click_Result" Height="49" FontSize="30"/>
