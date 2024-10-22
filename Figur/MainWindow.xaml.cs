@@ -69,7 +69,7 @@ namespace Figur
         }
         private void Click_Draw(object sender, EventArgs e)
         {
-            if((Convert.ToInt32(radius.Text.ToString()) * 2) > 432)
+            if((Convert.ToInt32(radius.Text.ToString()) * 2) > 432 || Convert.ToInt32(radius.Text.ToString()) <= 0 )
             {
                 MessageBox.Show("рисование невозможно");
             }      

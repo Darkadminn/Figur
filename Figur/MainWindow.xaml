@@ -7,16 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="101*"/>
+            <ColumnDefinition Width="99*"/>
+        </Grid.ColumnDefinitions>
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="294" Visibility="Visible">
             <MenuItem Header="Input" Name="miInput" Click="Click_Input"/>
             <MenuItem Header="Calc" Name="miCalc" Click="Click_Calc" />
             <MenuItem Header="Draw" Click="Click_Draw" />
             <MenuItem Header="Exit" Click="Click_Exit" />
-        </Menu>        <StackPanel Name="stackpanel" Visibility="Hidden" Height="450" Width="800">
-            <TextBox Name="radius" Text="Радиус"/>
-            <CheckBox  Content="Периметр" Name="P"/>
-            <CheckBox  Content="Площадь" Name="S"/>
-            <Button Content="Посчитать" Click="Click_Result"/>
+        </Menu>        <StackPanel Name="stackpanel" Visibility="Hidden" Width="800" Margin="0,116,0,101" Grid.ColumnSpan="2">
+            <TextBox Name="radius" Text="Радиус" Height="29" FontSize="18"/>
+            <CheckBox  Content="Периметр" Name="P" Height="21"/>
+            <CheckBox  Content="Площадь" Name="S" Height="21"/>
+            <Button Content="Посчитать" Click="Click_Result" Height="55" FontSize="30"/>
         </StackPanel>
     </Grid>
 </Window>
